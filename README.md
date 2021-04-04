@@ -24,4 +24,5 @@ Header /Authorization :  Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLC
  Hello World
 ## Application.properties
 jwt.secret=mysecretkey
+
 jwt.get.token.uri=/authenticate
