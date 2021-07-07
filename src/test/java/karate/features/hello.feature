@@ -1,7 +1,7 @@
 Feature: Get Hello
 
   Background:
-    * def signIn = call read('../auth/authentication.feature') { username: 'myusername', password: 'password' }
+    * def signIn = call read('../../authentication.feature') { username: 'myusername', password: 'password' }
     * def token = signIn.accessToken
     * def resourceUrl = apiBaseUrl + '/hello'
 
