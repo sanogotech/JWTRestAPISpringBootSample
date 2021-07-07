@@ -12,5 +12,11 @@ public class HelloWorldController {
 	public String hello() {
 		return "Hello World";
 	}
+	
+	
+	@RequestMapping({ "/docapi" })
+	public String docapi() {
+		return "Doc API";
+	}
 
 }
