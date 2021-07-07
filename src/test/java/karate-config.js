@@ -10,7 +10,7 @@ function init() {
         apiBaseUrl: 'http://localhost:8080'
     };
     if (env == 'dev') {
-        config.authUrl= 'http://localhost:8080/authenticate',
+       config.authUrl= 'http://localhost:8080/authenticate',
         config.apiBaseUrl= 'http://localhost:8080'
     } else if (env == 'qa') {
         //...

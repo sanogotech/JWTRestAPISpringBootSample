@@ -2,6 +2,15 @@ https://www.javainuse.com/spring/boot-jwt
 
 
 ## Karate
+
+To run all the tests ( they are all under karate), run
+```
+$ mvn test -Dtest=KarateTests
+```
+To run only the tests under the karate/hello, run
+```
+$ mvn test -Dtest=HelloRunner
+```
 mvn clean test -DargLine="-Dkarate.env=local" -Dtest=FeatureRunner 
 
 ##  1. Swagger
