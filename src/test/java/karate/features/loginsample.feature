@@ -18,6 +18,7 @@ Feature: Login and register Tests on reqres.in
     #And match $ contains {token:"#string"}
     #And match response == read('expected-response-payload.json')
     # Doc: https://github.com/intuit/karate#embedded-expressions
+    # Doc: https://github.com/intuit/karate#scenario-outline-enhancements
     # json
     # * def someJson = read('some-json.json')
     # * def moreJson = read('classpath:more-json.json')
