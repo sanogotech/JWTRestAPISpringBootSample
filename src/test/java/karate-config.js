@@ -15,6 +15,11 @@ function init() {
     } else if (env == 'qa') {
         //...
     }
+    
+    //get called once and store the result in the 'fullAuthInfos'     
+	config.fullAuthInfos =karate.callSingle('classpath:authentication.feature',config);
+	karate.log('Le token depuis karateconfig est :', config.fullAuthInfos);
+	
     karate.configure('connectTimeout', 5000);
     karate.configure('readTimeout', 5000);
     return config;
