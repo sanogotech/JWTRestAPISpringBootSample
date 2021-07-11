@@ -15,7 +15,8 @@ Feature: Login and register Tests on reqres.in
     * print response
     Then status <status_code>
     #And match $ contains {id:"#notnull"}
-    #And match $ contains {token:"#string"}
+	And match $ contains {token:"#notnull"}
+    And match $ contains {token:"#string"}
     #And match response == read('expected-response-payload.json')
     # Doc: https://github.com/intuit/karate#embedded-expressions
     # Doc: https://github.com/intuit/karate#scenario-outline-enhancements
@@ -26,4 +27,4 @@ Feature: Login and register Tests on reqres.in
     Examples: 
       | username             | password     | status_code | description  |
       | 'eve.holt@reqres.in' | 'cityslicka' |         200 | valid user   |
-      | 'eve.holt@reqres.in' | null         |         400 | invalid user |
+
