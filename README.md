@@ -1,5 +1,11 @@
 https://www.javainuse.com/spring/boot-jwt
 
+## https://grokonez.com Doc IT et exemple de code
+
+https://grokonez.com/spring-framework/spring-data/use-hal-browser-spring-data-rest-springboot-mysql
+
+## Swagger  Rest Controller
+- http://localhost:8080/swagger-ui.html
 
 ## Karate
 

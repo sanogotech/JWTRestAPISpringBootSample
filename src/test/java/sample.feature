@@ -40,3 +40,19 @@ Feature: Title of your feature
       | name  | value | status  |
       | name1 |     5 | success |
       | name2 |     7 | Fail    |
+	  
+  Scenario: Post request
+	 * def user =
+	   """
+	   {
+		 "name": "Jane",
+		 "username": "jane_pool",
+		 "phone": 12546758485
+		 }
+	   }
+	   """
+
+	 Given url 'https://www.kloia.com/'
+	 And request user
+	 When method POST
+	 Then status 201
