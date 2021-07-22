@@ -1,4 +1,4 @@
-package com.formationsec.model;
+package com.formationsec.model.biblio;
 
 import java.util.List;
 
